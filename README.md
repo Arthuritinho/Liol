@@ -1,2 +1,2 @@
 # Liol
-Reprodutor de música offline multiplataforma
+Gestor de sistema de negócios de academia

@@ -43,11 +43,37 @@ O sistema permite a gestão de funcionários novos ou existentes da academia. Es
 - Recepcionista
 - Gerente
 
-## Regras de negócio
+### Registro de Ponto
+O sistema conta com a possibilidade de registro da jornada de trabalho dos funcionários. Possui como funcionalidades: 
 
-1. O CPF é único para identificar cada pessoa, a data de nascimento é necessária para saber a idade
-2. O objetivo é necessário para avaliar o tipo de treino que o cliente deve fazer.
-3. O status da matrícula e do pagamento do cliente determina se ele pode ter acesso à academia e aos treinos.
-4. O cargo de funcionário é necessário para definir o salário e supervisão, o CREF (Conselho Regional de Educação Física) é necessário para os instrutores, estar matriculado no curso de ED. Física é necessário para os estagiários, o CRA (Conselho Regional de Administração) é necessário para os gestores.
-5. O Status da matrícula dos funcionários define se estão trabalhando na academia ou não, e o status da matrícula dos clientes define se podem ou não ter acesso à academia.
-6. Todos os funcionários têm direito ao benefício do Plano de saúde, o plano poderá incluir todos os seus dependentes mas com desconto de valor unitário do plano de saúde no salário do funcionário.
+- Registro de horário de entrada (Funcionário, Data, Hora, Minuto, Segundo, Dia, Mês e Ano);
+- Registro de horário de saída (Funcionário, Data, Hora, Minuto, Segundo, Dia, Mês e ano);
+- Registro e consulta de horas trabalhadas;
+- Controle de presença diária;
+- Consulta de histórico de ponto.
+
+### Gestão de Treinos
+O sistema permite que um instrutor possa criar e atribuir treinos aos alunos. Possui como funcionalidades: 
+
+- Cadastro de exercícios;
+- Registro dos dados dos exercícios (Nome, Grupo muscular, Quantidade de séries, Quantidade de repetições);
+- Criação de rotinas de treinos pelos instrutores;
+- Permitir que o instrutor vincule uma rotina de treinos aos alunos.
+
+### Gestão de Planos
+O sistema conta com planos para realizar a matrícula dos alunos. Esses planos possuem diferentes tipos dependendo da escolha do aluno. Possui como funcionalidades: 
+
+- Contratação de plano;
+- Renovação de plano;
+- Cancelamento de plano;
+- Consulta de vencimentos.
+
+**TIPOS DE PLANOS**
+
+| Planos              | Valor Fixo | Desconto em % | Duração em dias |
+| ------------------- | ---------- | ------------- | --------------- |
+| Treino experimental | R$ 0,00    | 0%            | 1               |
+| Plano Mensal        | R$ 60,00   | 0%            | 30              |
+| Plano Trimestral    | R$ 180,00  | 5%            | 90              |
+| Plano Semestral     | R$ 360,00  | 10%           | 180             |
+| Plano Anual         | R$ 720,00  | 15%           | 360             |

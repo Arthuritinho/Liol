@@ -77,3 +77,44 @@ O sistema conta com planos para realizar a matrícula dos alunos. Esses planos p
 | Plano Trimestral    | R$ 180,00  | 5%            | 90              |
 | Plano Semestral     | R$ 360,00  | 10%           | 180             |
 | Plano Anual         | R$ 720,00  | 15%           | 360             |
+
+### Controle de Matrículas
+O sistema conta com o registro de matrículas atribuídas aos alunos, validando a inscrição deste na academia. Possui como funcionalidades: 
+
+- Criação de matrícula;
+- Consulta de validade;
+- Controle de status da matrícula (Ativa, Suspensa, Cancelada, Expirada, Bloqueada).
+
+### Controle Financeiro
+O sistema permite o registro e consulta dos pagamentos realizados e a criação de relatórios administrativos do sistema. Esse controle atribui status de pagamento aos alunos com base na situação de matrícula dele. Possui como funcionalidades:
+
+- Registro de pagamento do mês atual;
+- Consulta de pagamentos de meses anteriores;
+- Relatório de inadimplência;
+- Histórico financeiro do aluno.
+
+**STATUS DE PAGAMENTO**
+- Pago;
+- Pendente;
+- Atrasado;
+- Cancelado.
+
+## Regras de Negócio
+
+  1. Cada pessoa cadastrada possui um CPF único no sistema;
+  2. Somente funcionários do cargo de Instrutor pode alterar ou criar treinos;
+  3. Ao acessar a ficha de treino diário, o sistema registra o treino daquele aluno como concluído;
+  4. Para um funcionário ocupar o cargo de Instrutor, ele deve possuir registro CREF (Conselho Regional de Educação Física) válido;
+  5. Para um funcionário ocupar o cargo de Gerente, ele deve possuir registro CRA (Conselho Regional de Administração) válido;
+  6. Todos os funcionários devem registrar a jornada de trabalho diária;
+  7. O horário de saída do registro de ponto não pode ser menor que o horário de entrada;
+  8. O horário de funcionamento da academia é de 05h às 23h em dias úteis e de 8h às 13h aos finais de semana e feriados;
+  9. O sistema calcula automaticamente as horas trabalhadas do funcionário;
+  10. O status da matrícula determina se um cliente pode ou não ter acesso à academia;
+  11. Um aluno pode possuir apenas uma matrícula;
+  12. Uma matrícula deve estar associada à apenas um plano;
+  13. Uma matrícula deve ser ativada apenas após a contratação de um plano;
+  14. O valor da mensalidade é calculado a partir da data de início e data de vencimento, com base na duração do plano, contando 30 dias para cada mês;
+  15. Pagamentos devem estar vinculados a uma matrícula ativa;
+  16. A data e valor de cada pagamento são registrados automaticamente pelo sistema.
+

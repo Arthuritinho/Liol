@@ -114,7 +114,7 @@ O sistema permite o registro e consulta dos pagamentos realizados e a criação 
   11. Um aluno pode possuir apenas uma matrícula;
   12. Uma matrícula deve estar associada à apenas um plano;
   13. Uma matrícula deve ser ativada apenas após a contratação de um plano;
-  14. O valor da mensalidade é calculado a partir da data de início e data de vencimento, com base na duração do plano, contando 30 dias para cada mês;
+  14. O valor da mensalidade é calculado a partir da data de início e de vencimento, considerando 30 dias em um mês;
   15. Pagamentos devem estar vinculados a uma matrícula ativa;
   16. A data e valor de cada pagamento são registrados automaticamente pelo sistema.
 

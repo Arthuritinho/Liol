@@ -32,7 +32,7 @@ O sistema permite a gestão de alunos novos ou existentes da academia. Possui co
 O sistema permite a gestão de funcionários novos ou existentes da academia. Esses funcionários estão divididos entre diferentes cargos. Possui como funcionalidades:
 
 - Cadastro de funcionários na academia
-- Registro de dados pessoais do funcionário (Nome, CPF, Data de Nascimento, Data de admissão, Cargo e Salário)
+- Registro de dados pessoais do funcionário (Nome, CPF, Data de Nascimento, Telefone, Endereço, Data de admissão, Cargo e Salário)
 - Validação de credenciais conforme cargo (CREF - Instrutores ; CRA - gerentes)
 - Controle de status do funcionário (Ativo, De Férias, Licença)
 

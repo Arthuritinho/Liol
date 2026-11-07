@@ -77,14 +77,14 @@ O sistema conta com planos para realizar a matrícula dos alunos. Esses planos p
 | Plano Semestral     | R$ 360,00  | 10%           | 180             |
 | Plano Anual         | R$ 720,00  | 15%           | 360             |
 
-### Controle de Matrículas
+### Controle de Matrículas (gestão de pagamentos)
 O sistema conta com o registro de matrículas atribuídas aos alunos, validando a inscrição deste na academia. Possui como funcionalidades: 
 
 - Criação de matrícula;
 - Consulta de validade;
 - Controle de status da matrícula (Ativa, Expirada, Cancelada).
 
-### Controle Financeiro
+### Controle Financeiro (relatório)
 O sistema permite o registro e consulta dos pagamentos realizados e a criação de relatórios administrativos do sistema. Esse controle atribui status de pagamento aos alunos com base na situação de matrícula dele. Possui como funcionalidades:
 
 - Registro de pagamento do mês atual;

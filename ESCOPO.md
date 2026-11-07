@@ -24,18 +24,17 @@ O sistema permite a gestão de alunos novos ou existentes da academia. Possui co
 
 - Cadastro de novos alunos
 - Atualização de informações cadastrais
-- Consulta de histórico de matrícula
-- Registro de dados pessoais do aluno (Matrícula, Nome, CPF, Data de Nascimento, Telefone)
-- Registro de dados físicos (Peso e Altura) e objetivo principal do aluno (emagrecimento, hipertrofia, condicionamento, etc)
-- Controle de status do aluno (Ativo, Inativo ou Bloqueado)
+- Registro de dados pessoais do aluno (Nome, CPF, Data de Nascimento, Telefone)
+- Registro de dados físicos (Peso e Altura) e objetivo principal do aluno (Emagrecimento, Hipertrofia, Condicionamento)
+- Controle de status da matrícula do aluno (Ativo, Expirada, Cancelada)
 
 ### Gestão de Funcionários
 O sistema permite a gestão de funcionários novos ou existentes da academia. Esses funcionários estão divididos entre diferentes cargos. Possui como funcionalidades:
 
 - Cadastro de funcionários na academia
 - Registro de dados pessoais do funcionário (Nome, CPF, Data de Nascimento, Data de admissão, Cargo e Salário)
-- Validação de credenciais conforme cargo (CREF - Instrutores e CRA - gerentes)
-- Controle de status do funcionário (Ativo, Afastado, De Férias, Licença, Inativo)
+- Validação de credenciais conforme cargo (CREF - Instrutores ; CRA - gerentes)
+- Controle de status do funcionário (Ativo, De Férias, Licença)
 
 **CARGOS DE FUNCIONÁRIO**
 
@@ -83,7 +82,7 @@ O sistema conta com o registro de matrículas atribuídas aos alunos, validando 
 
 - Criação de matrícula;
 - Consulta de validade;
-- Controle de status da matrícula (Ativa, Suspensa, Cancelada, Expirada, Bloqueada).
+- Controle de status da matrícula (Ativa, Expirada, Cancelada).
 
 ### Controle Financeiro
 O sistema permite o registro e consulta dos pagamentos realizados e a criação de relatórios administrativos do sistema. Esse controle atribui status de pagamento aos alunos com base na situação de matrícula dele. Possui como funcionalidades:

@@ -28,6 +28,15 @@ O sistema permite a gestão de alunos novos ou existentes da academia. Possui co
 - Registro de dados físicos (Peso e Altura) e objetivo principal do aluno (Emagrecimento, Hipertrofia, Condicionamento)
 - Controle de status da matrícula do aluno (Ativo, Expirada, Cancelada)
 
+### Controle de Plano do Aluno
+O sistema conta com o registro do plano do aluno, validando a inscrição deste na academia. Possui como funcionalidades: 
+
+- Controle de status da matrícula (Ativa, Expirada, Cancelada).
+- Contratação de plano;
+- Renovação de plano;
+- Cancelamento de plano;
+- Consulta de vencimentos.
+
 ### Gestão de Funcionários
 O sistema permite a gestão de funcionários novos ou existentes da academia. Esses funcionários estão divididos entre diferentes cargos. Possui como funcionalidades:
 
@@ -58,12 +67,7 @@ O sistema permite que um instrutor possa criar e atribuir treinos aos alunos. Po
 - Permitir que o instrutor vincule uma rotina de treinos aos alunos.
 
 ### Gestão de Planos
-O sistema conta com planos para realizar a matrícula dos alunos. Esses planos possuem diferentes tipos dependendo da escolha do aluno. Possui como funcionalidades: 
-
-- Contratação de plano;
-- Renovação de plano;
-- Cancelamento de plano;
-- Consulta de vencimentos.
+O sistema conta com planos para realizar a matrícula dos alunos. Esses planos possuem diferentes tipos dependendo da escolha do aluno. 
 
 **TIPOS DE PLANOS**
 
@@ -75,14 +79,7 @@ O sistema conta com planos para realizar a matrícula dos alunos. Esses planos p
 | Plano Semestral     | R$ 360,00  | 10%           | 180             |
 | Plano Anual         | R$ 720,00  | 15%           | 360             |
 
-### Controle de Matrículas (gestão de pagamentos)
-O sistema conta com o registro de matrículas atribuídas aos alunos, validando a inscrição deste na academia. Possui como funcionalidades: 
-
-- Criação de matrícula;
-- Consulta de validade;
-- Controle de status da matrícula (Ativa, Expirada, Cancelada).
-
-### Controle Financeiro (relatório)
+### Controle Financeiro (Relatório)
 O sistema permite o registro e consulta dos pagamentos realizados e a criação de relatórios administrativos do sistema. Esse controle atribui status de pagamento aos alunos com base na situação de matrícula dele. Possui como funcionalidades:
 
 - Registro de pagamento do mês atual;

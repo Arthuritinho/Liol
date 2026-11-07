@@ -37,6 +37,13 @@ O sistema conta com o registro do plano do aluno, validando a inscrição deste 
 - Cancelamento de plano;
 - Consulta de vencimentos.
 
+### Controle de Treinos
+O sistema permite que um instrutor possa atribuir treinos aos alunos e personalizá-los. Existem treinos bases atribuídos automaticamente ao aluno no momento de seu cadastro, mas esses podem ser editados pelo instrutor. Possui como funcionalidades: 
+
+- Registro dos dados dos exercícios (Nome, Grupo muscular, Quantidade de séries, Quantidade de repetições);
+- Edição de exercícios;
+- Vinculação de um treino a um aluno.
+
 ### Gestão de Funcionários
 O sistema permite a gestão de funcionários novos ou existentes da academia. Esses funcionários estão divididos entre diferentes cargos. Possui como funcionalidades:
 
@@ -57,14 +64,6 @@ O sistema conta com a possibilidade de registro da jornada de trabalho dos funci
 - Registro de horário de entrada (Funcionário, Data, Hora, Minuto, Segundo, Dia, Mês e Ano);
 - Registro de horário de saída (Funcionário, Data, Hora, Minuto, Segundo, Dia, Mês e ano);
 - Consulta de histórico de ponto.
-
-### Gestão de Treinos
-O sistema permite que um instrutor possa criar e atribuir treinos aos alunos. Possui como funcionalidades: 
-
-- Cadastro de exercícios;
-- Registro dos dados dos exercícios (Nome, Grupo muscular, Quantidade de séries, Quantidade de repetições);
-- Criação de rotinas de treinos pelos instrutores;
-- Permitir que o instrutor vincule uma rotina de treinos aos alunos.
 
 ### Gestão de Planos
 O sistema conta com planos para realizar a matrícula dos alunos. Esses planos possuem diferentes tipos dependendo da escolha do aluno. 

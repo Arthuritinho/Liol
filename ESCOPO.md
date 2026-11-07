@@ -47,8 +47,6 @@ O sistema conta com a possibilidade de registro da jornada de trabalho dos funci
 
 - Registro de horário de entrada (Funcionário, Data, Hora, Minuto, Segundo, Dia, Mês e Ano);
 - Registro de horário de saída (Funcionário, Data, Hora, Minuto, Segundo, Dia, Mês e ano);
-- Registro e consulta de horas trabalhadas;
-- Controle de presença diária;
 - Consulta de histórico de ponto.
 
 ### Gestão de Treinos

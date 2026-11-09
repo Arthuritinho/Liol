@@ -24,7 +24,7 @@ O sistema permite a gestão de alunos novos ou existentes da academia. Possui co
 
 - Cadastro de novos alunos
 - Atualização de informações cadastrais
-- Registro de dados pessoais do aluno (Nome, CPF, Data de Nascimento, Telefone)
+- Registro de dados pessoais do aluno (Nome, CPF, Data de Nascimento, Telefone, Email)
 - Registro de dados físicos (Peso e Altura) e objetivo principal do aluno (Emagrecimento, Hipertrofia, Condicionamento)
 - Controle de status da matrícula do aluno (Ativo, Expirada, Cancelada)
 
@@ -48,7 +48,7 @@ O sistema permite que um instrutor possa atribuir treinos aos alunos e personali
 O sistema permite a gestão de funcionários novos ou existentes da academia. Esses funcionários estão divididos entre diferentes cargos. Possui como funcionalidades:
 
 - Cadastro de funcionários na academia
-- Registro de dados pessoais do funcionário (Nome, CPF, Data de Nascimento, Telefone, Endereço, Data de admissão, Cargo e Salário)
+- Registro de dados pessoais do funcionário (Nome, CPF, Data de Nascimento, Telefone, Email, Endereço, Data de admissão, Cargo e Salário)
 - Validação de credenciais conforme cargo (CREF - Instrutores ; CRA - gerentes)
 - Controle de status do funcionário (Ativo, De Férias, Licença)
 
@@ -109,5 +109,7 @@ O sistema permite o registro e consulta dos pagamentos realizados e a criação 
   13. Uma matrícula deve ser ativada apenas após a contratação de um plano;
   14. O valor da mensalidade é calculado a partir da data de início e de vencimento, considerando 30 dias em um mês;
   15. Pagamentos devem estar vinculados a uma matrícula ativa;
-  16. A data e valor de cada pagamento são registrados automaticamente pelo sistema.
+  16. A data e valor de cada pagamento são registrados automaticamente pelo sistema;
+  17. Sistema de recuperação de senha: Código é enviado ao email cadastrado para alterá-la;
+  18. Um email é enviado ao usuário toda vez que um cadastro novo é realizado.
 

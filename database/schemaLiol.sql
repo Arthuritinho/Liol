@@ -207,3 +207,27 @@ CREATE TABLE instrutores_treino_aluno (
   FOREIGN KEY (fk_cref)            REFERENCES instrutores(cref)
     ON UPDATE CASCADE
 ) AUTO_INCREMENT = 1;
+
+DELIMITER $$
+CREATE TRIGGER tg_validar_datas_treino
+BEFORE INSERT ON treino
+FOR EACH ROW
+BEGIN 
+  IF NEW.data_fim < NEW.data_inicio THEN
+    SIGNAL SQLSTATE '45000' 
+    SET MESSAGE_TEXT = 'Erro: A data de término do treino não pode ser anterior à data de início!';
+  END IF;
+END$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE PROCEDURE proc_atualizar_matriculas_vencidas()
+BEGIN
+  -- Atualiza o status do aluno para 'Inativo' se a assinatura dele já venceu e a data atual (CURDATE()) for maior que a data de vencimento.
+  UPDATE alunos a
+  INNER JOIN assinatura ass ON a.matricula_aluno = ass.fk_matricula_aluno
+  SET a.status_matricula = 'Inativo'
+  WHERE ass.data_vencimento < CURDATE() 
+    AND a.status_matricula = 'Ativo';
+END$$
+DELIMITER ;

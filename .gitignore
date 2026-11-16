@@ -1,0 +1,11 @@
+# Arquivos gerados pelo Maven
+target/
+
+# Metadados locais do Eclipse IDE (cada integrante gera o seu ao importar o Maven)
+.project
+.classpath
+.settings/
+
+# Credenciais locais de banco e SMTP (cada membro copia do .example)
+src/main/resources/config/db.properties
+src/main/resources/config/email.properties

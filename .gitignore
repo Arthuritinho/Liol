@@ -9,3 +9,4 @@ target/
 # Credenciais locais de banco e SMTP (cada membro copia do .example)
 src/main/resources/config/db.properties
 src/main/resources/config/email.properties
+/bin/

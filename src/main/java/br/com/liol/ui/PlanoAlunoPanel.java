@@ -32,7 +32,7 @@ public class PlanoAlunoPanel extends JPanel {
 	/**
 	 * Construtor padrão (mantém a aba Design do WindowBuilder funcionando).
 	 */
-	public PainelPlanoAluno() {
+	public PlanoAlunoPanel() {
 		setBackground(new Color(0, 0, 0));
 		setLayout(null);
 		setBounds(0, 0, 960, 540);

@@ -38,7 +38,7 @@ public class RecuperarSenhaPanel extends JPanel {
 		setBounds(0, 0, 960, 540);
 
 		// Botão de voltar (seta no canto superior esquerdo)
-		JButton btnVoltar = new JButton("<-");
+		JButton btnVoltar = new JButton("←");
 		btnVoltar.setBorder(new LineBorder(new Color(124, 77, 255), 2));
 		btnVoltar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

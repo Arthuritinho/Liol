@@ -45,6 +45,9 @@ public class TelaLogin extends JFrame {
 		setBounds(100, 100, 960, 540);
 		setLocationRelativeTo(null);
 		
+		ImageIcon logo = new ImageIcon("liol_logo.jpg");
+		setIconImage(logo.getImage());
+		
 		contentPane = new JPanel();
 		contentPane.setForeground(new Color(255, 255, 255));
 		contentPane.setBackground(new Color(0, 0, 0));

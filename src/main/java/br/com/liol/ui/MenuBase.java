@@ -32,6 +32,7 @@ public class MenuBase extends JFrame {
 	/**
 	 * Launch the application.
 	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -44,13 +45,26 @@ public class MenuBase extends JFrame {
 			}
 		});
 	}
+	
+	public void logout() {
 
+	    TelaLogin telaLogin = new TelaLogin();
+	    telaLogin.setVisible(true);
+
+	    this.dispose();
+	}
+	
 	/**
 	 * Create the frame.
 	 */
+	
 	public MenuBase() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 960, 540);
+		
+		ImageIcon logo= new ImageIcon("liol_logo.jpg");
+		setIconImage(logo.getImage());
+		
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(0, 0, 0));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

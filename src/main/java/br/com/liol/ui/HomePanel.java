@@ -20,7 +20,7 @@ public class HomePanel extends JPanel {
 		setBounds(10, 10, 680, 483);
 
 		JLabel lblLogo = new JLabel();
-		lblLogo.setIcon(new ImageIcon("liol.jpg"));
+		lblLogo.setIcon(new ImageIcon("liol_logo.jpg"));
 		lblLogo.setBounds(249, 150, 200, 200);
 		add(lblLogo);
 		

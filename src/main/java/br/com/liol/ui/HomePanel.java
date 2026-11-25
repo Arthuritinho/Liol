@@ -18,9 +18,9 @@ public class HomePanel extends JPanel {
 		setBackground(new Color(0, 0, 0));
 		setLayout(null);
 		setBounds(10, 10, 680, 483);
-
+		
 		JLabel lblLogo = new JLabel();
-		lblLogo.setIcon(new ImageIcon("liol_logo.jpg"));
+		lblLogo.setIcon(new ImageIcon(getClass().getResource("/assets/liol_logo.jpg"));
 		lblLogo.setBounds(249, 150, 200, 200);
 		add(lblLogo);
 		

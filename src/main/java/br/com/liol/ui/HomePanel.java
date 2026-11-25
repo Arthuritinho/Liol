@@ -39,6 +39,15 @@ public class HomePanel extends JPanel {
 		btnSair.setBounds(294, 396, 91, 21);
 		add(btnSair);
 
+		btnSair.addActionListener(new ActionListener() {
+		    public void actionPerformed(ActionEvent e) {
+		        MenuBase menu =
+		            (MenuBase) SwingUtilities.getWindowAncestor(HomePanel.this);
+
+		        menu.logout();
+		    }
+		});
+
 	}
 
 }

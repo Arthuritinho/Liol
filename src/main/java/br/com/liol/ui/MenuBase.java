@@ -62,8 +62,7 @@ public class MenuBase extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 960, 540);
 		
-		ImageIcon logo = new
-		ImageIcon(getClass().getResource("/assets/liol_logo.jpg"));
+		ImageIcon logo = new ImageIcon(getClass().getResource("/assets/liol_logo.jpg"));
 		setIconImage(logo.getImage());
 		
 		contentPane = new JPanel();

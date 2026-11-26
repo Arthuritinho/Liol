@@ -4,7 +4,11 @@ import javax.swing.JPanel;
 import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.Color;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.SwingUtilities;
 import javax.swing.SwingConstants;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 public class HomePanel extends JPanel {
@@ -20,7 +24,7 @@ public class HomePanel extends JPanel {
 		setBounds(10, 10, 680, 483);
 		
 		JLabel lblLogo = new JLabel();
-		lblLogo.setIcon(new ImageIcon(getClass().getResource("/assets/liol_logo.jpg"));
+		lblLogo.setIcon(new ImageIcon(getClass().getResource("/assets/liol_logo.jpg")));
 		lblLogo.setBounds(249, 150, 200, 200);
 		add(lblLogo);
 		

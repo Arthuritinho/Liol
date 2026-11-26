@@ -21,23 +21,18 @@ public class RecuperarSenhaPanel extends JPanel {
 	private JTextField textFieldCodigo;
 	private JPasswordField passwordFieldNovaSenha;
 
-	/**
-	 * Construtor usado pela TelaLogin para navegar e permitir voltar.
-	 */
 	public RecuperarSenhaPanel(TelaLogin telaLogin) {
 		this();
 		this.telaLogin = telaLogin;
 	}
 
-	/**
-	 * Construtor padrão (mantém a aba Design do WindowBuilder funcionando).
-	 */
+
 	public RecuperarSenhaPanel() {
 		setBackground(new Color(0, 0, 0));
 		setLayout(null);
 		setBounds(0, 0, 960, 540);
 
-		// Botão de voltar (seta no canto superior esquerdo)
+
 		JButton btnVoltar = new JButton("←");
 		btnVoltar.setBorder(new LineBorder(new Color(124, 77, 255), 2));
 		btnVoltar.addActionListener(new ActionListener() {
@@ -55,7 +50,6 @@ public class RecuperarSenhaPanel extends JPanel {
 		btnVoltar.setBounds(30, 25, 55, 38);
 		add(btnVoltar);
 
-		// Título
 		JLabel lblTitulo = new JLabel("RECUPERAÇÃO DE SENHA");
 		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTitulo.setForeground(new Color(255, 255, 255));
@@ -63,12 +57,11 @@ public class RecuperarSenhaPanel extends JPanel {
 		lblTitulo.setBounds(280, 55, 400, 40);
 		add(lblTitulo);
 
-		// Rótulo e Campo: E-mail
-		JLabel lblEmail = new JLabel("E-mail");
+		JLabel lblEmail = new JLabel("Email");
 		lblEmail.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblEmail.setForeground(Color.WHITE);
 		lblEmail.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblEmail.setBounds(215, 165, 145, 35);
+		lblEmail.setBounds(233, 148, 106, 35);
 		add(lblEmail);
 
 		textFieldEmail = new JTextField();
@@ -77,57 +70,88 @@ public class RecuperarSenhaPanel extends JPanel {
 		textFieldEmail.setCaretColor(Color.WHITE);
 		textFieldEmail.setBackground(Color.BLACK);
 		textFieldEmail.setBorder(new LineBorder(new Color(124, 77, 255), 2, true));
-		textFieldEmail.setBounds(375, 165, 210, 35);
+		textFieldEmail.setBounds(375, 151, 210, 35);
 		add(textFieldEmail);
 
-		// Rótulo e Campo: Código verificação
 		JLabel lblCodigo = new JLabel("Código verificação");
+		lblCodigo.setVisible(false);
 		lblCodigo.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblCodigo.setForeground(Color.WHITE);
 		lblCodigo.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblCodigo.setBounds(190, 225, 170, 35);
+		lblCodigo.setBounds(185, 151, 170, 35);
 		add(lblCodigo);
 
 		textFieldCodigo = new JTextField();
+		textFieldCodigo.setVisible(false);
 		textFieldCodigo.setHorizontalAlignment(SwingConstants.CENTER);
 		textFieldCodigo.setForeground(Color.WHITE);
 		textFieldCodigo.setCaretColor(Color.WHITE);
 		textFieldCodigo.setBackground(Color.BLACK);
 		textFieldCodigo.setBorder(new LineBorder(new Color(124, 77, 255), 2, true));
-		textFieldCodigo.setBounds(375, 225, 210, 35);
+		textFieldCodigo.setBounds(375, 151, 210, 35);
 		add(textFieldCodigo);
 
-		// Rótulo e Campo: Nova senha
 		JLabel lblNovaSenha = new JLabel("Nova senha");
+		lblNovaSenha.setVisible(false);
 		lblNovaSenha.setHorizontalAlignment(SwingConstants.RIGHT);
 		lblNovaSenha.setForeground(Color.WHITE);
 		lblNovaSenha.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		lblNovaSenha.setBounds(215, 285, 145, 35);
+		lblNovaSenha.setBounds(210, 210, 145, 35);
 		add(lblNovaSenha);
 
 		passwordFieldNovaSenha = new JPasswordField();
+		passwordFieldNovaSenha.setVisible(false);
 		passwordFieldNovaSenha.setHorizontalAlignment(SwingConstants.CENTER);
 		passwordFieldNovaSenha.setForeground(Color.WHITE);
 		passwordFieldNovaSenha.setCaretColor(Color.WHITE);
 		passwordFieldNovaSenha.setBackground(Color.BLACK);
 		passwordFieldNovaSenha.setBorder(new LineBorder(new Color(124, 77, 255), 2, true));
-		passwordFieldNovaSenha.setBounds(375, 285, 210, 35);
+		passwordFieldNovaSenha.setBounds(375, 210, 210, 35);
 		add(passwordFieldNovaSenha);
 
-		// Botão Entrar / Confirmar
-		JButton btnEntrar = new JButton("Entrar");
-		btnEntrar.addActionListener(new ActionListener() {
+		JButton btnConfirmar = new JButton("Confirmar");
+		btnConfirmar.setVisible(false);
+		btnConfirmar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			
 				
+
+				// TODO (Regra de Negócio): Validar o código para o e-mail informado,
+				// atualizar a senha no banco e chamar telaLogin.voltarParaLogin() ao concluir.
 			}
 		});
-		btnEntrar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-		btnEntrar.setForeground(new Color(124, 77, 255));
-		btnEntrar.setBackground(new Color(255, 255, 255));
-		btnEntrar.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		btnEntrar.setFocusPainted(false);
-		btnEntrar.setBounds(410, 360, 140, 40);
-		add(btnEntrar);
+		btnConfirmar.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		btnConfirmar.setForeground(new Color(124, 77, 255));
+		btnConfirmar.setBackground(new Color(255, 255, 255));
+		btnConfirmar.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnConfirmar.setFocusPainted(false);
+		btnConfirmar.setBounds(410, 280, 140, 40);
+		add(btnConfirmar);
+
+		JButton btnEnviarCodigo = new JButton("Enviar Código");
+		btnEnviarCodigo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String email = textFieldEmail.getText();
+
+				// TODO (Regra de Negócio): Verificar se o e-mail está cadastrado e enviar o código.
+				// Executar a transição de tela abaixo apenas se o envio for bem-sucedido:
+
+				lblEmail.setVisible(false);
+				textFieldEmail.setVisible(false);
+				btnEnviarCodigo.setVisible(false);
+
+				lblCodigo.setVisible(true);
+				textFieldCodigo.setVisible(true);
+				lblNovaSenha.setVisible(true);
+				passwordFieldNovaSenha.setVisible(true);
+				btnConfirmar.setVisible(true);
+			}
+		});
+		btnEnviarCodigo.setForeground(new Color(124, 77, 255));
+		btnEnviarCodigo.setFont(new Font("Tahoma", Font.PLAIN, 16));
+		btnEnviarCodigo.setFocusPainted(false);
+		btnEnviarCodigo.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		btnEnviarCodigo.setBackground(Color.WHITE);
+		btnEnviarCodigo.setBounds(410, 206, 140, 40);
+		add(btnEnviarCodigo);
 	}
 }
